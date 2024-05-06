@@ -1,0 +1,115 @@
+*{
+    background-image: url("./todo-img/horror.avif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 69%;
+
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0)!important;
+    -webkit-focus-ring-color: rgba(255,255,255,0)!important;
+    outline: none !important;
+}
+.container{
+   width:80%;
+   max-width: 470px;
+   margin: 80px auto 0;
+   border-radius: 20px;
+   background: transparent;
+   backdrop-filter: blur(10px);
+   border: 1px solid gray;
+   overflow: hidden;
+}
+.title{
+    background: transparent;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    color:white;
+    font-weight: 600;
+}
+
+.input{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding-top: 30px;
+    padding-left:10%;
+   
+}
+.input input{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    width:90%;
+    height:25px;
+    color: white;
+    outline: none;
+    font-size: 20px;
+  
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.input button{
+    backdrop-filter: blur(10px);
+    background: transparent;
+    background-color:red;
+    color:black ;
+    outline: none;
+    border: none;
+    width: 50px;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 28px;
+    border-radius: 20px;
+    font-weight: 700; 
+    cursor: pointer; 
+    font-size: 18px;
+}
+ul{
+    background: transparent;
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+}
+ul li{
+    background: transparent;
+    position: relative;
+    font-size: 17px;
+    color: white;
+    padding:1px;
+    letter-spacing: 1px;
+    font-style: bolder;
+}
+
+li::before{
+    content: "";
+    position: absolute;
+    background-image: url(./todo-img/uncheck.png);
+    left: -25px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+ul li.checked{
+    color: sandybrown;
+    text-decoration: line-through;
+}
+ul li.checked::before{ 
+    background-image: url(./todo-img/check.jpeg);
+    background-size: cover;
+}
+span{
+    background: transparent;
+    color: white;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    font-size: 32px;
+    font-weight: 600;
+    top: -5px;
+    margin-right: 20px;
+}
+span:hover{
+   color: red;
+}
